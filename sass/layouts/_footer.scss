@@ -4,6 +4,10 @@
     padding-top: 70px;
   }
 
+  @media screen and (min-width: $desktop-second) {
+    padding-top: 100px;
+  }
+
   &__container {
     position: relative;
     background-repeat: no-repeat;
@@ -22,9 +26,15 @@
       background: url(../images/footer/laptop/footer-bg-laptop.png) no-repeat;
     }
 
-    @media screen and (min-width: $laptop) {
+    @media screen and (min-width: $desktop-first) {
       height: 660px;
       background: url(../images/footer/desktop-first/footer-bg-desk1.png)
+        no-repeat;
+    }
+
+    @media screen and (min-width: $desktop-second) {
+      height: 885px;
+      background: url(../images/footer/desktop-second/footer-bg-desk2.png)
         no-repeat;
     }
   }
@@ -33,6 +43,14 @@
     margin-top: 50px;
     width: 65px;
     height: 20px;
+
+    @media screen and (min-width: $desktop-first) {
+      margin-top: 100px;
+    }
+
+    @media screen and (min-width: $desktop-second) {
+      margin-top: 103px;
+    }
   }
 
   &__title {
@@ -59,6 +77,11 @@
       font-size: 72px;
       margin-right: 220px;
     }
+
+    @media screen and (min-width: $desktop-second) {
+      padding-top: 219px;
+      margin-right: 350px;
+    }
   }
 
   &__text {
@@ -82,8 +105,13 @@
 
     @media screen and (min-width: $desktop-first) {
       font-size: 14px;
-      top: 300px;
+      top: 340px;
       left: 705px;
+    }
+
+    @media screen and (min-width: $desktop-second) {
+      top: 460px;
+      left: 935px;
     }
   }
 }

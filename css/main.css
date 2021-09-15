@@ -386,6 +386,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .header {
+    padding-top: 50px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header {
     max-width: 360px;
@@ -437,6 +443,19 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .header {
+    height: 1055px;
+    background-image: url("../images/header/desktop-second/header-bg-desk2.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1920px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1920px), (min-resolution: 192dpi) and (min-width: 1920px), (min-resolution: 2dppx) and (min-width: 1920px) {
+  .header {
+    background-image: url("../images/header/desktop-second/header-bg-desk2@2x.jpg");
+  }
+}
+
 .header__logo-bonum {
   display: block;
   width: 45px;
@@ -465,6 +484,13 @@ body {
     right: 135px;
     width: 65px;
     height: 20px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header__logo-bonum {
+    top: 50px;
+    right: 256px;
   }
 }
 
@@ -530,6 +556,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .header__title {
+    margin-top: 217px;
+  }
+}
+
 .header__text {
   line-height: 1;
   font-weight: 500;
@@ -569,6 +601,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .header__text {
+    top: 520px;
+    left: 205px;
+  }
+}
+
 .header__text-list {
   position: absolute;
   top: 233px;
@@ -599,6 +638,13 @@ body {
   .header__text-list {
     top: 360px;
     right: 60px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header__text-list {
+    top: 490px;
+    right: 185px;
   }
 }
 
@@ -659,6 +705,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .header__list {
+    padding-top: 558px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header__item:first-child {
     margin-right: 29px;
@@ -683,6 +735,15 @@ body {
   }
   .header__item:last-child {
     margin-left: 208px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header__item:first-child {
+    margin-right: 117px;
+  }
+  .header__item:last-child {
+    margin-left: 285px;
   }
 }
 
@@ -728,6 +789,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .color {
+    padding-top: 100px;
+  }
+}
+
 .color__container {
   position: relative;
 }
@@ -759,6 +826,13 @@ body {
     font-size: 30px;
     margin-left: 600px;
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .color__title {
+    font-size: 38px;
+    margin-left: 710px;
   }
 }
 
@@ -797,6 +871,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .color__description {
+    margin-right: 230px;
+  }
+}
+
 .color__dark {
   position: absolute;
   -webkit-transform: rotate(-90deg);
@@ -826,6 +906,12 @@ body {
   .color__dark {
     top: 105px;
     left: 125px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .color__dark {
+    left: 245px;
   }
 }
 
@@ -927,6 +1013,12 @@ body {
 @media screen and (min-width: 1440px) {
   .color__item--second {
     margin-left: 600px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .color__item--second {
+    margin-left: 840px;
   }
 }
 
@@ -1182,6 +1274,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .color__bright {
+    right: 235px;
+  }
+}
+
 .footer {
   padding-top: 50px;
 }
@@ -1189,6 +1287,12 @@ body {
 @media screen and (min-width: 960px) {
   .footer {
     padding-top: 70px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .footer {
+    padding-top: 100px;
   }
 }
 
@@ -1217,10 +1321,17 @@ body {
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1440px) {
   .footer__container {
     height: 660px;
     background: url(../images/footer/desktop-first/footer-bg-desk1.png) no-repeat;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .footer__container {
+    height: 885px;
+    background: url(../images/footer/desktop-second/footer-bg-desk2.png) no-repeat;
   }
 }
 
@@ -1228,6 +1339,18 @@ body {
   margin-top: 50px;
   width: 65px;
   height: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__bonum-logo {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .footer__bonum-logo {
+    margin-top: 103px;
+  }
 }
 
 .footer__title {
@@ -1261,6 +1384,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .footer__title {
+    padding-top: 219px;
+    margin-right: 350px;
+  }
+}
+
 .footer__text {
   position: absolute;
   margin-top: 37px;
@@ -1288,8 +1418,15 @@ body {
 @media screen and (min-width: 1440px) {
   .footer__text {
     font-size: 14px;
-    top: 300px;
+    top: 340px;
     left: 705px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .footer__text {
+    top: 460px;
+    left: 935px;
   }
 }
 /*# sourceMappingURL=main.css.map */

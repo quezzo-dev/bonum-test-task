@@ -2,6 +2,10 @@
   @media screen and (min-width: $tablet) {
     padding-top: 30px;
   }
+
+  @media screen and (min-width: $desktop-second) {
+    padding-top: 50px;
+  }
   position: relative;
   background-image: url("../images/header/mobile/header-bg-mobile.jpg");
   background-color: #c4c4c4;
@@ -56,6 +60,17 @@
     background-image: url("../images/header/desktop-first/header-bg-desk1@2x.jpg");
   }
 
+  @media screen and(min-width: $desktop-second) {
+    height: 1055px;
+    background-image: url("../images/header/desktop-second/header-bg-desk2.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: $desktop-second),
+    (min-resolution: 192dpi) and (min-width: $desktop-second),
+    (min-resolution: 2dppx) and (min-width: $desktop-second) {
+    background-image: url("../images/header/desktop-second/header-bg-desk2@2x.jpg");
+  }
+
   &__logo {
     &-bonum {
       display: block;
@@ -79,6 +94,11 @@
         right: 135px;
         width: 65px;
         height: 20px;
+      }
+
+      @media screen and(min-width: $desktop-second) {
+        top: 50px;
+        right: 256px;
       }
     }
 
@@ -129,6 +149,10 @@
       font-size: 72px;
       width: 469px;
     }
+
+    @media screen and (min-width: $desktop-second) {
+      margin-top: 217px;
+    }
   }
 
   &__text {
@@ -160,6 +184,11 @@
       left: 85px;
     }
 
+    @media screen and(min-width: $desktop-second) {
+      top: 520px;
+      left: 205px;
+    }
+
     &-list {
       position: absolute;
       top: 233px;
@@ -179,6 +208,11 @@
       @media screen and (min-width: $desktop-first) {
         top: 360px;
         right: 60px;
+      }
+
+      @media screen and (min-width: $desktop-second) {
+        top: 490px;
+        right: 185px;
       }
     }
 
@@ -226,6 +260,10 @@
     @media screen and (min-width: $desktop-first) {
       padding-top: 380px;
     }
+
+    @media screen and (min-width: $desktop-second) {
+      padding-top: 558px;
+    }
   }
 
   &__item {
@@ -256,6 +294,16 @@
 
       &:last-child {
         margin-left: 208px;
+      }
+    }
+
+    @media screen and (min-width: $desktop-second) {
+      &:first-child {
+        margin-right: 117px;
+      }
+
+      &:last-child {
+        margin-left: 285px;
       }
     }
   }
