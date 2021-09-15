@@ -21,6 +21,12 @@
       height: 496px;
       background: url(../images/footer/laptop/footer-bg-laptop.png) no-repeat;
     }
+
+    @media screen and (min-width: $laptop) {
+      height: 660px;
+      background: url(../images/footer/desktop-first/footer-bg-desk1.png)
+        no-repeat;
+    }
   }
 
   &__bonum-logo {
@@ -47,6 +53,12 @@
       font-size: 48px;
       margin-right: 140px;
     }
+
+    @media screen and (min-width: $desktop-first) {
+      padding-top: 105px;
+      font-size: 72px;
+      margin-right: 220px;
+    }
   }
 
   &__text {
@@ -66,6 +78,12 @@
     @media screen and (min-width: $laptop) {
       top: 260px;
       left: 465px;
+    }
+
+    @media screen and (min-width: $desktop-first) {
+      font-size: 14px;
+      top: 300px;
+      left: 705px;
     }
   }
 }

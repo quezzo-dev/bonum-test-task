@@ -45,6 +45,17 @@
     background-image: url("../images/header/laptop/header-bg-laptop@2x.jpg");
   }
 
+  @media screen and(min-width: $desktop-first) {
+    height: 803px;
+    background-image: url("../images/header/desktop-first/header-bg-desk1.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: $desktop-first),
+    (min-resolution: 192dpi) and (min-width: $desktop-first),
+    (min-resolution: 2dppx) and (min-width: $desktop-first) {
+    background-image: url("../images/header/desktop-first/header-bg-desk1@2x.jpg");
+  }
+
   &__logo {
     &-bonum {
       display: block;
@@ -63,6 +74,12 @@
         width: 60px;
         height: 15px;
       }
+
+      @media screen and(min-width: $desktop-first) {
+        right: 135px;
+        width: 65px;
+        height: 20px;
+      }
     }
 
     &-virna {
@@ -78,6 +95,11 @@
       @media screen and(min-width: $laptop) {
         width: 100px;
         height: 13px;
+      }
+
+      @media screen and(min-width: $desktop-first) {
+        width: 120px;
+        height: 16px;
       }
     }
   }
@@ -100,6 +122,12 @@
       margin-top: 80px;
       font-size: 48px;
       width: 290px;
+    }
+
+    @media screen and (min-width: $desktop-first) {
+      margin-top: 152px;
+      font-size: 72px;
+      width: 469px;
     }
   }
 
@@ -127,6 +155,11 @@
       left: 45px;
     }
 
+    @media screen and(min-width: $desktop-first) {
+      top: 430px;
+      left: 85px;
+    }
+
     &-list {
       position: absolute;
       top: 233px;
@@ -141,6 +174,11 @@
 
       @media screen and (min-width: $laptop) {
         right: 20px;
+      }
+
+      @media screen and (min-width: $desktop-first) {
+        top: 360px;
+        right: 60px;
       }
     }
 
@@ -163,6 +201,12 @@
       &:not(:last-child) {
         margin-right: 41px;
       }
+
+      @media screen and(min-width: $desktop-first) {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
     }
   }
 
@@ -177,6 +221,10 @@
 
     @media screen and (min-width: $laptop) {
       padding-top: 260px;
+    }
+
+    @media screen and (min-width: $desktop-first) {
+      padding-top: 380px;
     }
   }
 
@@ -198,6 +246,16 @@
 
       &:last-child {
         margin-left: 66px;
+      }
+    }
+
+    @media screen and (min-width: $desktop-first) {
+      &:first-child {
+        margin-right: 80px;
+      }
+
+      &:last-child {
+        margin-left: 208px;
       }
     }
   }
