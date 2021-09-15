@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  background-image: url("../../images/header/mobile/header-bg-mobile.jpg");
+  background-image: url("../images/header/mobile/header-bg-mobile.jpg");
   background-color: #c4c4c4;
   height: 457px;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
   @media (min-device-pixel-ratio: 2) and (max-width: 767px),
     (min-resolution: 192dpi) and (max-width: 767px),
     (min-resolution: 2dppx) and (max-width: 767px) {
-    background-image: url("../../images/header/mobile/header-bg-mobile@2x.jpg");
+    background-image: url("../images/header/mobile/header-bg-mobile@2x.jpg");
   }
 
   &__logo {

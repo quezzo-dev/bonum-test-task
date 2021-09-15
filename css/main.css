@@ -371,7 +371,7 @@ body {
 
 .header {
   position: relative;
-  background-image: url("../../images/header/mobile/header-bg-mobile.jpg");
+  background-image: url("../images/header/mobile/header-bg-mobile.jpg");
   background-color: #c4c4c4;
   height: 457px;
   background-repeat: no-repeat;
@@ -380,7 +380,7 @@ body {
 
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .header {
-    background-image: url("../../images/header/mobile/header-bg-mobile@2x.jpg");
+    background-image: url("../images/header/mobile/header-bg-mobile@2x.jpg");
   }
 }
 
@@ -624,7 +624,7 @@ body {
 
 .footer__container {
   position: relative;
-  background: url(../../images/footer/mobile/footer-bg-mobile.png) left top;
+  background: url(../images/footer/mobile/footer-bg-mobile.png) left top;
   background-repeat: no-repeat;
   height: 416px;
 }
