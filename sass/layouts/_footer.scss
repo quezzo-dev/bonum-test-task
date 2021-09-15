@@ -1,5 +1,8 @@
 .footer {
   padding-top: 50px;
+  @media screen and (min-width: $laptop) {
+    padding-top: 70px;
+  }
 
   &__container {
     position: relative;
@@ -12,6 +15,11 @@
 
     @media screen and (min-width: $tablet) {
       background: url(../images/footer/tablet/footer-bg-tablet.png) no-repeat;
+    }
+
+    @media screen and (min-width: $laptop) {
+      height: 496px;
+      background: url(../images/footer/laptop/footer-bg-laptop.png) no-repeat;
     }
   }
 
@@ -33,6 +41,12 @@
       margin-left: auto;
       margin-right: 121px;
     }
+
+    @media screen and (min-width: $laptop) {
+      padding-top: 91px;
+      font-size: 48px;
+      margin-right: 140px;
+    }
   }
 
   &__text {
@@ -47,6 +61,11 @@
 
     @media screen and (min-width: $tablet) {
       left: 370px;
+    }
+
+    @media screen and (min-width: $laptop) {
+      top: 260px;
+      left: 465px;
     }
   }
 }
