@@ -1,15 +1,33 @@
 .header {
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+  }
   position: relative;
   background-image: url("../images/header/mobile/header-bg-mobile.jpg");
   background-color: #c4c4c4;
   height: 457px;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
 
   @media (min-device-pixel-ratio: 2) and (max-width: 767px),
     (min-resolution: 192dpi) and (max-width: 767px),
     (min-resolution: 2dppx) and (max-width: 767px) {
     background-image: url("../images/header/mobile/header-bg-mobile@2x.jpg");
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+    background-image: url("../images/header/tablet/header-bg-tablet.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: $tablet),
+    (min-resolution: 192dpi) and (min-width: $tablet),
+    (min-resolution: 2dppx) and (min-width: $tablet) {
+    background-image: url("../images/header/tablet/header-bg-tablet@2x.jpg");
   }
 
   &__logo {
@@ -18,13 +36,22 @@
       width: 45px;
       height: 14px;
       position: absolute;
-      top: 31px;
+      top: 30px;
       right: 15px;
+
+      @media screen and (min-width: $tablet) {
+        right: 39px;
+      }
     }
 
     &-virna {
       @media screen and(max-width: 767px) {
         display: none;
+      }
+
+      @media screen and (min-width: $tablet) {
+        width: 120px;
+        height: 16px;
       }
     }
   }
@@ -33,11 +60,31 @@
     @media screen and(max-width: 767px) {
       display: none;
     }
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 60px;
+      width: 270px;
+      font-size: 42px;
+      line-height: 1;
+      font-weight: $fw-bold;
+    }
   }
 
   &__text {
     @media screen and(max-width: 767px) {
       display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      left: -15px;
+      top: 280px;
+      text-align: right;
+      transform: rotate(-90deg);
+      font-size: 13px;
+      line-height: 1;
+      font-weight: $fw-medium;
+      width: 130px;
     }
 
     &-list {
@@ -47,11 +94,19 @@
       display: flex;
       align-items: center;
       transform: rotate(90deg);
+
+      @media screen and (min-width: $tablet) {
+        right: -38px;
+      }
     }
 
     &-item {
       font-size: 14px;
       line-height: 1.2;
+
+      @media screen and(min-width: $tablet) {
+        font-size: 16px;
+      }
 
       &:first-child {
         font-weight: $fw-regular;
@@ -71,21 +126,41 @@
     display: flex;
     align-items: center;
     padding-top: 407px;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 217px;
+    }
   }
 
   &__item {
-    &:first-child {
-      margin-right: 29px;
+    @media screen and (max-width: 767px) {
+      &:first-child {
+        margin-right: 29px;
+      }
+
+      &:last-child {
+        margin-left: 162px;
+      }
     }
 
-    &:last-child {
-      margin-left: 162px;
+    @media screen and (min-width: $tablet) {
+      &:first-child {
+        margin-right: 60px;
+      }
+
+      &:last-child {
+        margin-left: 66px;
+      }
     }
   }
 
   &__social-list {
     display: flex;
     align-items: center;
+
+    @media screen and(min-width: $tablet) {
+      justify-content: center;
+    }
   }
 
   &__social-item {

@@ -3,9 +3,16 @@
 
   &__container {
     position: relative;
-    background: url(../images/footer/mobile/footer-bg-mobile.png) left top;
     background-repeat: no-repeat;
     height: 416px;
+
+    @media screen and (max-width: 767px) {
+      background: url(../images/footer/mobile/footer-bg-mobile.png) left top;
+    }
+
+    @media screen and (min-width: $tablet) {
+      background: url(../images/footer/tablet/footer-bg-tablet.png) no-repeat;
+    }
   }
 
   &__bonum-logo {
@@ -21,6 +28,11 @@
     font-size: 42px;
     font-weight: $fw-bold;
     line-height: 1.2;
+
+    @media screen and (min-width: $tablet) {
+      margin-left: auto;
+      margin-right: 121px;
+    }
   }
 
   &__text {
@@ -32,5 +44,9 @@
 
     font-size: 13px;
     font-weight: $fw-medium;
+
+    @media screen and (min-width: $tablet) {
+      left: 370px;
+    }
   }
 }
