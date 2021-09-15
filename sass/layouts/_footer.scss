@@ -1,0 +1,36 @@
+.footer {
+  padding-top: 50px;
+
+  &__container {
+    position: relative;
+    background: url(../../images/footer/mobile/footer-bg-mobile.png) left top;
+    background-repeat: no-repeat;
+    height: 416px;
+  }
+
+  &__bonum-logo {
+    margin-top: 50px;
+    width: 65px;
+    height: 20px;
+  }
+
+  &__title {
+    padding-top: 51px;
+    text-align: right;
+
+    font-size: 42px;
+    font-weight: $fw-bold;
+    line-height: 1.2;
+  }
+
+  &__text {
+    position: absolute;
+    margin-top: 37px;
+    transform: rotate(-90deg);
+    top: 211px;
+    left: 112px;
+
+    font-size: 13px;
+    font-weight: $fw-medium;
+  }
+}

@@ -1,0 +1,101 @@
+.header {
+  position: relative;
+  background-image: url("../../images/header/mobile/header-bg-mobile.jpg");
+  background-color: #c4c4c4;
+  height: 457px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url("../../images/header/mobile/header-bg-mobile@2x.jpg");
+  }
+
+  &__logo {
+    &-bonum {
+      display: block;
+      width: 45px;
+      height: 14px;
+      position: absolute;
+      top: 31px;
+      right: 15px;
+    }
+
+    &-virna {
+      @media screen and(max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    @media screen and(max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__text {
+    @media screen and(max-width: 767px) {
+      display: none;
+    }
+
+    &-list {
+      position: absolute;
+      top: 233px;
+      right: -55px;
+      display: flex;
+      align-items: center;
+      transform: rotate(90deg);
+    }
+
+    &-item {
+      font-size: 14px;
+      line-height: 1.2;
+
+      &:first-child {
+        font-weight: $fw-regular;
+      }
+
+      &:last-child {
+        font-weight: $fw-medium;
+      }
+
+      &:not(:last-child) {
+        margin-right: 41px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding-top: 407px;
+  }
+
+  &__item {
+    &:first-child {
+      margin-right: 29px;
+    }
+
+    &:last-child {
+      margin-left: 162px;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-item {
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+
+  &__social-svg {
+    width: 20px;
+    height: 20px;
+  }
+}

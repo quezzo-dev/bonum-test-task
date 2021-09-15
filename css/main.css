@@ -1,0 +1,656 @@
+@charset "UTF-8";
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/* ===== ДОПОЛНЕНИЯ от Sandra Hrevtsova ===== */
+/* обнуляем дефолтные маркеры у всех маркированных списков */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* обнуляем дефолтные подчеркивания у всех ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* ===== ДОПОЛНЕНИЯ от Sandra Hrevtsova ===== */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+address {
+  font-style: normal;
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Regular.eot");
+  src: url("../fonts/CeraPro-Regular.woff") format("woff"), url("../fonts/CeraPro-Regular.ttf") format("truetype"), url("../fonts/CeraPro-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Medium.eot");
+  src: url("../fonts/CeraPro-Medium.woff") format("woff"), url("../fonts/CeraPro-Medium.ttf") format("truetype"), url("../fonts/CeraPro-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Bold.eot");
+  src: url("../fonts/CeraPro-Bold.woff") format("woff"), url("../fonts/CeraPro-Bold.ttf") format("truetype"), url("../fonts/CeraPro-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Cera Pro", sans-serif;
+  color: #000000;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 360px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    width: 1920px;
+    padding-left: 256px;
+    padding-right: 256px;
+  }
+}
+
+.header {
+  position: relative;
+  background-image: url("../../images/header/mobile/header-bg-mobile.jpg");
+  background-color: #c4c4c4;
+  height: 457px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .header {
+    background-image: url("../../images/header/mobile/header-bg-mobile@2x.jpg");
+  }
+}
+
+.header__logo-bonum {
+  display: block;
+  width: 45px;
+  height: 14px;
+  position: absolute;
+  top: 31px;
+  right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .header__logo-virna {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__text {
+    display: none;
+  }
+}
+
+.header__text-list {
+  position: absolute;
+  top: 233px;
+  right: -55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.header__text-item {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.header__text-item:first-child {
+  font-weight: 400;
+}
+
+.header__text-item:last-child {
+  font-weight: 500;
+}
+
+.header__text-item:not(:last-child) {
+  margin-right: 41px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 407px;
+}
+
+.header__item:first-child {
+  margin-right: 29px;
+}
+
+.header__item:last-child {
+  margin-left: 162px;
+}
+
+.header__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__social-item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.header__social-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.color {
+  padding-top: 50px;
+}
+
+.color__container {
+  position: relative;
+}
+
+.color__title {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.color__description {
+  width: 270px;
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: 400;
+  color: #292929;
+  line-height: 1.3;
+}
+
+.color__dark {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 168px;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.color__subtitle {
+  padding-top: 104px;
+  width: 270px;
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.color__text {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: right;
+}
+
+.color__list {
+  position: relative;
+  padding-top: 113px;
+}
+
+.color__second-palette, .color__third-palette, .color__fourth-palette, .color__fifth-palette, .color__sixth-palette, .color__seventh-palette {
+  width: 70px;
+  height: 50px;
+}
+
+.color__first-palette {
+  background-color: #9a0034;
+  width: 133px;
+  height: 50px;
+  margin-left: 180px;
+}
+
+.color__second-palette {
+  background-color: #e8d8d9;
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
+.color__third-palette {
+  background-color: #d7969e;
+  margin-top: 50px;
+}
+
+.color__fourth-palette {
+  background-color: #dedcdc;
+  margin-left: auto;
+}
+
+.color__fifth-palette {
+  background-color: #898989;
+  margin-top: 30px;
+}
+
+.color__sixth-palette {
+  background-color: #b7b7b7;
+  margin-right: 30px;
+}
+
+.color__seventh-palette {
+  background-color: #000000;
+}
+
+.color__hex {
+  font-weight: 500;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.color__hex--first {
+  font-size: 12px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  top: 45px;
+  right: -20px;
+}
+
+.color__thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 70px;
+}
+
+.color__wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 100px;
+}
+
+.color__bright {
+  text-transform: uppercase;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  bottom: 15px;
+  right: 0;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.footer {
+  padding-top: 50px;
+}
+
+.footer__container {
+  position: relative;
+  background: url(../../images/footer/mobile/footer-bg-mobile.png) left top;
+  background-repeat: no-repeat;
+  height: 416px;
+}
+
+.footer__bonum-logo {
+  margin-top: 50px;
+  width: 65px;
+  height: 20px;
+}
+
+.footer__title {
+  padding-top: 51px;
+  text-align: right;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.footer__text {
+  position: absolute;
+  margin-top: 37px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 211px;
+  left: 112px;
+  font-size: 13px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=main.css.map */

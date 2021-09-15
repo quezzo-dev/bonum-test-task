@@ -1,0 +1,23 @@
+// ==========| Utils |========== \\
+
+@import "./utils/normalize";
+@import "./utils/variables";
+@import "./utils/breakpoints";
+@import "./utils/fonts";
+
+// ==========| End Utils |========== \\
+
+// ==========| Common |========== \\
+
+@import "./common/general";
+@import "./common/container";
+
+// ==========| End Common |========== \\
+
+// ==========| Layouts |========== \\
+
+@import "./layouts/header";
+@import "./layouts/colors";
+@import "./layouts/footer";
+
+// ==========| End Layouts |========== \\
